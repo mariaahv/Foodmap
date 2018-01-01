@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="assets/icons/fonts/style.css">
+    <link rel="stylesheet" href="frameworks\Bootstrap\css\bootstrap.min.css"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+      <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>foodmap</title>
+          </head>
+          <body>
+
+                <div class="container">
+                  <div class="row">
+                  <section>
+                   <h1 class="h2" class="col-xs-2" >Foodmap</h1>
+                   <i class="icon-checkbox-unchecked col-xs-1" id="square1"></i>
+                   <hr class="col-xs-8">
+                   <i class="icon-checkbox-unchecked col-xs-1" id="square2"></i>
+
+                   <form runat="server">
+
+                      <div data-key="AIzaSyDwNBXmHBDQ29JWsRH8gwNVkf7mM0-flaI"
+                      data-control-zoom="true"
+                      data-control-type="true"
+                      data-control-scale="true"
+                      data-control-streetview="true"
+                      data-control-rotate="true"
+                      data-event-mousewheel="true"
+
+                      data-zoom="14" role="map" class="gmaps">
+
+                      <!-- items de ubicaciones -->
+
+                     <div
+                     data-id="1"
+                     data-lat="-15.363"
+                     data-lng="11.044"
+                     class="marker">
+                     <div class="map-card">
+                     <h1>Restaurante acurio</h1>
+                     <p>direccion: miraflores, #445, Stgo.</p>
+                     <p>Telefono: +56753223344</p>
+                     <p>e-Mail: fake1@email.com</p>
+                     </div>
+                     </div>
+
+                     <div
+                     data-id="2"
+                     data-lat="-8.363"
+                     data-lng="12.044"
+                     class="marker">
+                     <div class="map-card">
+                     <h1>Restaurante panchita</h1>
+                     <p>direccion: la marina, #445.</p>
+                     <p>Telefono: +56753223344</p>
+                     <p>e-Mail: fake2@email.com</p>
+                     </div>
+                     </div>
+
+                     <div
+                     data-id="3"
+                     data-lat="-5.363"
+                     data-lng="131.044"
+                     class="marker">
+                     <div class="map-card">
+                     <h1>Restaurante Astrid y Gaston</h1>
+                     <p>Direccion:surco, #445, Stgo.</p>
+                     <p>Telefono: +56753223344</p>
+                     <p>e-Mail: fake3@email.com</p>
+                     </div>
+                     </div>
+                     <!-- fin datos de ubicación -->
+
+                     </div>
+                     <h5 class="h5">Comida cerca de ti</h5>
+                     <input id="search"type="text" name="nombre" placeholder="Filtrar restaurantes">
+                     <i class="icon-search"></i><br>
+                     <picture id="picture" class="col-xs-10 col-xs-offset-2">
+                        <img id="img1" class="images" src="assets\images\food4.jpg" alt="food" class="col-xs-12">
+                        <img id="img2" class="images" src="assets\images\food.jpg" alt="food" class="col-xs-12">
+                        <img id="img3" class="images" src="assets\images\food1.jpg" alt="food">
+                        <img id="img4" class="images" src="assets\images\food2.jpg" alt="food">
+                        <img id="img5" class="images" src="assets\images\food3.jpg" alt="food">
+                        <img id="img6" class="images" src="assets\images\food.jpg" alt="food" class="col-xs-12">
+                     </picture>
+                   </section>
+                 </div>
+               </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="gmaps/css/jquery.gmaps.css">
+    <script type="text/javascript" src="gmaps/js/jquery.gmaps.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

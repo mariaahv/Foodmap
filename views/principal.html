@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../assets/icons/fonts/style.css">
+    <link rel="stylesheet" href="../frameworks\Bootstrap\css\bootstrap.min.css"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <title>foodmap</title>
+    </head>
+    <body>
+
+    <div class="container">
+      <div class="row">
+      <section>
+       <h2 id="h2" class="col-xs-2" >Foodmap</h2>
+       <i class="icon-checkbox-unchecked col-xs-2" id="square1"></i>
+       <hr class="col-xs-8">
+       <i class="icon-checkbox-unchecked col-xs-2" id="square2"></i>
+ <form runat="server">
+
+
+
+           <div data-key="AIzaSyDwNBXmHBDQ29JWsRH8gwNVkf7mM0-flaI"
+           data-control-zoom="true"
+           data-control-type="true"
+           data-control-scale="true"
+           data-control-streetview="true"
+           data-control-rotate="true"
+           data-event-mousewheel="true"
+
+           data-zoom="14" role="map" class="gmaps">
+
+           <!-- items de ubicaciones -->
+
+          <div
+          data-id="1"
+          data-lat="-20.363"
+          data-lng="111.044"
+          class="marker">
+          <div class="map-card">
+          <h1>This is my title 1</h1>
+          <p>Address: Fake street, #445, Stgo.</p>
+          <p>Phone: +56753223344</p>
+          <p>e-Mail: fake1@email.com</p>
+          </div>
+          </div>
+
+          <div
+          data-id="2"
+          data-lat="-21.363"
+          data-lng="121.044"
+          class="marker">
+          <div class="map-card">
+          <h1>This is my title 2</h1>
+          <p>Address: Fake street, #445, Stgo.</p>
+          <p>Phone: +56753223344</p>
+          <p>e-Mail: fake2@email.com</p>
+          </div>
+          </div>
+
+          <div
+          data-id="3"
+          data-lat="-25.363"
+          data-lng="131.044"
+          class="marker">
+          <div class="map-card">
+          <h1>This is my title 3</h1>
+          <p>Address: Fake street, #445, Stgo.</p>
+          <p>Phone: +56753223344</p>
+          <p>e-Mail: fake3@email.com</p>
+          </div>
+          </div>
+          <!-- fin datos de ubicación -->
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+ </form>
+  </body>
+  <link rel="stylesheet" href="../gmaps/css/jquery.gmaps.css">
+  <script type="text/javascript" src="../gmaps/js/jquery.gmaps.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+</html>
