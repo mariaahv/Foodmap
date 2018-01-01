@@ -81,7 +81,7 @@
                      <input id="search"type="text" name="nombre" placeholder="Filtrar restaurantes">
                      <i class="icon-search"></i><br>
                      <picture id="picture" class="col-xs-10 col-xs-offset-2">
-                        <img id="img1" class="images" src="assets\images\food4.jpg" alt="food" class="col-xs-12">
+                        <img id="img1" class="images" src="assets\images\food4.jpg" alt="food" class="col-xs-12" data-toggle="modal" data-target="#myModal">
                         <img id="img2" class="images" src="assets\images\food.jpg" alt="food" class="col-xs-12">
                         <img id="img3" class="images" src="assets\images\food1.jpg" alt="food">
                         <img id="img4" class="images" src="assets\images\food2.jpg" alt="food">
@@ -89,12 +89,121 @@
                         <img id="img6" class="images" src="assets\images\food.jpg" alt="food" class="col-xs-12">
                      </picture>
                    </section>
+
                  </div>
                </div>
         </div>
     </div>
+
+
+    <!--modal-->
+    <div class="container">
+  <h2>Basic Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Pollos Pollon</h4>
+
+        </div>
+        <div class="modal-body">
+
+
+          <div class="container">
+            <div class="row">
+
+            <section>
+             <p class="h2">Pollos Pollon</p>
+             <h1 class="h2">Pollos Pollon</h1>
+             <i class="icon-checkbox-unchecked col-xs-1" id="square1"></i>
+             <hr class="col-xs-8">
+             <i class="icon-checkbox-unchecked col-xs-1" id="square2"></i>
+
+             <form runat="server">
+
+                <div data-key="AIzaSyDwNBXmHBDQ29JWsRH8gwNVkf7mM0-flaI"
+                data-control-zoom="true"
+                data-control-type="true"
+                data-control-scale="true"
+                data-control-streetview="true"
+                data-control-rotate="true"
+                data-event-mousewheel="true"
+
+                data-zoom="14" role="map" class="gmaps">
+
+                <!-- items de ubicaciones -->
+
+               <div
+               data-id="1"
+               data-lat="-15.363"
+               data-lng="11.044"
+               class="marker">
+               <div class="map-card">
+               <h1>Restaurante acurio</h1>
+               <p>direccion: miraflores, #445, Stgo.</p>
+               <p>Telefono: +56753223344</p>
+               <p>e-Mail: fake1@email.com</p>
+               </div>
+               </div>
+
+               <div
+               data-id="2"
+               data-lat="-8.363"
+               data-lng="12.044"
+               class="marker">
+               <div class="map-card">
+               <h1>Restaurante panchita</h1>
+               <p>direccion: la marina, #445.</p>
+               <p>Telefono: +56753223344</p>
+               <p>e-Mail: fake2@email.com</p>
+               </div>
+               </div>
+
+               <div
+               data-id="3"
+               data-lat="-5.363"
+               data-lng="131.044"
+               class="marker">
+               <div class="map-card">
+               <h1>Restaurante Astrid y Gaston</h1>
+               <p>Direccion:surco, #445, Stgo.</p>
+               <p>Telefono: +56753223344</p>
+               <p>e-Mail: fake3@email.com</p>
+               </div>
+               </div>
+               <!-- fin datos de ubicación -->
+
+               </div>
+
+          <p class="h5">Pollos para todos</p>
+
+          <p>Av.  las flores</p>
+          <p>nro 550</p>
+          <p>distrito de Miraflores</p>
+          <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Pedir ahora</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
     <link rel="stylesheet" href="gmaps/css/jquery.gmaps.css">
     <script type="text/javascript" src="gmaps/js/jquery.gmaps.js"></script>
+    <script type="text/javascript" src="frameworks\Bootstrap\js\bootstrap.min.js"></script>
 
     <script type="text/javascript" src="js/app.js"></script>
   </body>
