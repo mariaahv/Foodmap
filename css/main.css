@@ -66,6 +66,17 @@ hr{
   margin-top: 50px;
   box-sizing: border-box;
   }
+  .button{
+    width: 50%;
+    background-color: #FE7E11;
+    border: #FE7E11;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .button:hover{
+    background-color: #C96E1C;
+  }
 
 @media (max-width :768px){
 
