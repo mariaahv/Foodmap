@@ -47,4 +47,6 @@ $(document).ready(function(){
       $("#img6").css("width", "28%");
     });
 
+
+
 });
