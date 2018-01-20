@@ -27,22 +27,6 @@ body{
   width: 70%;
 }
 
-
-.icon-checkbox-unchecked{
-  display: inline-block;
-  font-size: 30px;
-  color:white;
-}
-  #square1{
-    margin-right: 15px;
-  }
-
-
-  #square2{
-    float: right;
-    margin-right: 10px;
-  }
-
 hr{
     display: inline-block;
     border: 1px solid white;
@@ -94,7 +78,13 @@ hr{
     font-size: 30px;
     background-color: #F8F5F8;
   }
+  .center{
+    text-align: center;
+  }
 
+   .images-modal{
+     width: 200%;
+    }
 @media (max-width :768px){
 
 .col-1 {

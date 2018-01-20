@@ -13,7 +13,7 @@ $(document).ready(function(){
   function showRestaurantes(){
   for(var i=0 ;i<data.length;i++){
     var $containerPlates=$('<div></div>');
-    $containerPlates.addClass(' lista col-xs-6 col-md-5 container-images');
+    $containerPlates.addClass(' lista box col-xs-6 col-md-5 container-images');
     $containerPlates.attr('data-name',data[i].name);
     $containerPlates.attr('data-toggle','modal');
     $containerPlates.attr('data-target','#myModal');
@@ -41,5 +41,19 @@ $(document).ready(function(){
         $(this).show();
       }
     })
-  })
+  });
+
+  //myModal
+  $('.box').on('click',function(){
+    for(i=0;i<data.length;i++){
+      if($(this).data('name')===data[i].name){
+        $('.image').attr('src',data[i].image);
+        $('.image').addClass('images-modal');
+        $('.name').text(data[i].name);
+        $('.direccion').text(data[i].direccion);
+        $('.precio').text(data[i].precio);
+        $('.tipo').text(data[i].tipo);
+          }
+    }
+  });
 });
