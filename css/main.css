@@ -53,6 +53,7 @@ hr{
   margin: 5px;
 
 }
+
   #picture{
   width: 90%;
   margin-left:10%;
@@ -76,6 +77,22 @@ hr{
   }
   .button:hover{
     background-color: #C96E1C;
+  }
+  .images-data{
+    width: 100%;
+    border: 2px solid white;
+
+  }
+  .container-images{
+    background: gray;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .text-center{
+    margin-left: 30%;
+    font-size: 30px;
+    background-color: #F8F5F8;
   }
 
 @media (max-width :768px){

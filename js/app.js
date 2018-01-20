@@ -8,45 +8,38 @@ $(document).ready(function(){
       $("#img1").css("width", "28%");
     });
 
-    $("#img2").mouseover(function(){
-        $("#img2 ").css("width", "50%");
-    });
-    $('#img2').mouseout(function()
-         {
-      $("#img2").css("width", "28%");
-    });
-    $("#img3").mouseover(function(){
-        $("#img3 ").css("width", "50%");
-    });
-    $('#img3').mouseout(function()
-         {
-      $("#img3").css("width", "28%");
-    });
 
-    $("#img4").mouseover(function(){
-        $("#img4").css("width", "50%");
-    });
-    $('#img4').mouseout(function()
-         {
-      $("#img4").css("width", "28%");
-    });
+  var $container=$('#restaurants');
+  function showRestaurantes(){
+  for(var i=0 ;i<data.length;i++){
+    var $containerPlates=$('<div></div>');
+    $containerPlates.addClass(' lista col-xs-6 col-md-5 container-images');
+    $containerPlates.attr('data-name',data[i].name);
+    $containerPlates.attr('data-toggle','modal');
+    $containerPlates.attr('data-target','#myModal');
+    $container.append($containerPlates);
 
-    $("#img5").mouseover(function(){
-        $("#img5").css("width", "50%");
-    });
-    $('#img5').mouseout(function()
-         {
-      $("#img5").css("width", "28%");
-    });
+   var $Name=$('<h1></h1>');
+   $Name.text(data[i].name);
+   $containerPlates.append($Name);
+   var $img = $('<img/>');
+   $img.addClass('images-data');
+   $img.attr('src', data[i].image);
+   $containerPlates.append($img);
+  }
+}
+ // llamando ala funcion
+  showRestaurantes();
 
-    $("#img6").mouseover(function(){
-        $("#img6").css("width", "50%");
-    });
-    $('#img6').mouseout(function()
-         {
-      $("#img6").css("width", "28%");
-    });
-
-
-
+  //filtrar
+  $('#search').keyup(function(){
+    var name =$(this).val();
+    $('.lista').hide();
+    $('.lista').each(function(){
+      var busqueda =$(this).text();
+      if(busqueda.indexOf(name)!== -1){
+        $(this).show();
+      }
+    })
+  })
 });
